@@ -126,7 +126,7 @@ const setFinish=(row,col)=>{
       }
       </div>
       
-      <div className="w-[95%] my-[30px] justify-center items-center">
+      <div className="w-[98%] my-[30px] justify-center items-center">
           {grid && grid.map((row, rowIdx) => (
             <div className="flex justify-center items-center" key={rowIdx}>
             {row?.map((node, nodeIdx) => {
