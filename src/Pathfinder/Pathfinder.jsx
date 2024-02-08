@@ -100,7 +100,7 @@ const setFinish=(row,col)=>{
   return (
       <div className="bg-[#ffffff] flex flex-col items-center">
       <div className="flex justify-center items-center my-2">
-     {chooseStart?<span>Choose Start Node</span>:chooseFinish?<span>Choose Finish Node</span>:<> <button className="mx-2 bg-slate-500 px-4 py-2 rounded-sm  text-[16px]"  onClick={()=>{
+     {chooseStart?<span className="text-[16px]">Choose Start Node</span>:chooseFinish?<span className="text-[16px]">Choose Finish Node</span>:<> <button className="mx-2 bg-slate-500 px-4 py-2 rounded-sm  text-[16px]"  onClick={()=>{
         setChooseStart(true)
 
       }}>Set Start</button>
