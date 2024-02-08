@@ -100,17 +100,17 @@ const setFinish=(row,col)=>{
   return (
       <div className="bg-[#ffffff] flex flex-col items-center">
       <div className="flex justify-center items-center my-2">
-     {chooseStart?<span>Choose Start Node</span>:chooseFinish?<span>Choose Finish Node</span>:<> <button className="mx-2 bg-slate-500 px-2 rounded-sm "  onClick={()=>{
+     {chooseStart?<span>Choose Start Node</span>:chooseFinish?<span>Choose Finish Node</span>:<> <button className="mx-2 bg-slate-500 px-4 py-2 rounded-sm "  onClick={()=>{
         setChooseStart(true)
 
       }}>Set Start</button>
 
-<button className="mx-2 bg-slate-500 px-2 rounded-sm "  onClick={()=>{
+<button className="mx-2 bg-slate-500 px-4 py-2 rounded-sm "  onClick={()=>{
        setChooseFinish(true)
       }}>Set Finish</button>
       <button 
             onClick={() => visualiseDijkstra()}
-            className="outline-1 bg-slate-500 mx-2 px-2 rounded-sm "
+            className="outline-1 bg-slate-500 mx-2 px-4 py-2 rounded-sm "
       >
         Find Shortest Path 
       </button>
@@ -119,7 +119,7 @@ const setFinish=(row,col)=>{
       window.location.reload()
       
      }}
-     className="bg-slate-500 px-2 rounded-sm "
+     className="bg-slate-500 px-4 py-2 rounded-sm "
       >
        Reset
       </button> </>
